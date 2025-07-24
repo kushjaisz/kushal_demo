@@ -8,15 +8,15 @@ data class Holding(
     val closePrice: Double
 ) {
     val investment: Double
-        get() = "%.3f".format(quantity * avgPrice).toDouble()
+        get() = quantity * avgPrice
 
     val currentValue: Double
-        get() = "%.3f".format(quantity * currentPrice).toDouble()
+        get() = quantity * currentPrice
 
     val pnl: Double
-        get() = "%.5f".format(currentValue - investment).toDouble()
+        get() = currentValue - investment
 
     val todayPnl: Double
-        get() = "%.3f".format((currentPrice - closePrice) * quantity).toDouble()
+        get() = (currentPrice - closePrice) * quantity
 }
 

@@ -97,4 +97,7 @@ dependencies {
     androidTestImplementation("androidx.test:core:1.5.0")
     androidTestImplementation("androidx.room:room-testing:2.6.1")
 
+// Espresso (optional, for UI tests)
+    androidTestImplementation ("androidx.test.espresso:espresso-core:3.5.1")
+
 }
